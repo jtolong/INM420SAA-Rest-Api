@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Urban Dictionary Lookup</title>
+  <!-- css reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+  <!-- external css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- logo and header -->
+  <header class="ud-header">
+    <div class="fake-logo">
+      <span class="logo-letter">U</span>
+      <span class="logo-text">rban Dictionary</span>
+    </div>
+  </header>
+
+  <!-- searchbox-->
+  <main class="ud-main">
+    <p class="instruction">Type a word to look it up:</p>
+
+    <input type="text" id="termInput" placeholder="Enter a word">
+    <button onclick="fetchDefinition()">Search</button>
+    <button onclick="clearResults()">Clear</button>
+
+    <div id="result"></div>
+
+    <!-- search history -->
+    <div id="history">
+      <h4>Previous Searches:</h4>
+      <div id="historyTerms"></div>
+    </div>
+  </main>
+  <!-- javascript -->
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
